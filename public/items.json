@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "GIXXER 155CC",
+        "price": "200,600",
+        "quantity": "3",
+        "description": "Here is the latest version of your favorite street sport bike with the same engine specifications and engine test as the Gixxer. With its new advanced Disc-Brake, it promises a really fabulous, more stable and more confident riding experience on all kinds of terrain. ",
+        "supplier": "Masud khan",
+        "img": "https://i.ibb.co/TBC57gc/suzuki.png"
+    },
+    {
+        "id": 2,
+        "name": "GSX-R DUAL ABS",
+        "price": "4000",
+        "quantity": "4",
+        "description": "The Suzuki GSX-R Dual ABS line had defined sport bike performance for over 30 years, with more than a million sold worldwide. So the dedicated Suzuki engineers who have devoted their lives to the GSX-R Dual ABS.",
+        "supplier": "Rasid khan",
+        "img": "https://i.ibb.co/GPsnC6B/Suzuki-GSX-R.png"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha FZS FI Double Disc",
+        "price": "200,800",
+        "quantity": "2",
+        "description": "The Yamaha FZ Series set a new benchmark for biking. The FZS-FI takes it to the next level. It brings the most advanced Yamaha Blue Core concept to offer bikers an unmatched experience of performance and efficiency.",
+        "supplier": "Niloy roy",
+        "img": "https://i.ibb.co/fGVqLFt/fzs-armada-blue.png"
+    },
+    {
+        "id": 4,
+        "name": "Yamaha R15 V3",
+        "price": "450,000",
+        "quantity": "2",
+        "description": "The original supersport is back! Born of Yamaha’s racing DNA that shaped legends like M1, The R1 and the R-series, the all-new R15 powered with Dual Channel ABS is max powerhouse of 18.6 PS that brings track experience to the streets.",
+        "supplier": "Mohit roy",
+        "img": "https://i.ibb.co/R7YnDVf/yamahar15-v3.png"
+    },
+    {
+        "id": 5,
+        "name": "CB Hornet 160R CBS",
+        "price": "200,900",
+        "quantity": "4",
+        "description": "Honda CB Hornet 160R CBS Bike Price in BD 2022. Which Engine Type is Air Cooled, 4 Stroke, SI Engine. This bike is powered by the 162.71 ccEngine. CB Hornet 160R CBS Generates Maximum Power 14.90 BHP @ 8500 rpm.",
+        "supplier": "Noyon saha",
+        "img": "https://i.ibb.co/tYHMd7n/honda-cb-hornet.png"
+    },
+    {
+        "id": 6,
+        "name": "Honda CBR 150R",
+        "price": "550,000",
+        "quantity": "3",
+        "description": "The new Honda CBR 150R now comes with Sportier Front look and Striping Design with Emergency Stop Signal, ABS (Anti-Lock Braking System) and many more advanced features.",
+        "supplier": "Salman khan",
+        "img": "https://i.ibb.co/kmMsPmY/honda-cbr150r.png"
+    }
+]
