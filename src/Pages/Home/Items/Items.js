@@ -11,7 +11,7 @@ const Items = () => {
 
 
     return (
-        <div className='container'>
+        <div id='items' className='container'>
             <h1 className='text-dark text-center mt-5'>Our Items</h1>
            <div className='row'>
            {
