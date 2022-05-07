@@ -1,16 +1,10 @@
 import React from 'react';
-import {useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Item.css';
 
 const Item = ({item}) => {
-    const {id, name, img, price, quantity, description, supplier} = item;
-    const navigate = useNavigate();
-
-    const navigateToItemDetail = id => {
-        navigate(`/item/${id}`);
-    }
-
-
+    const {name, img, price, quantity, description, supplier} = item;
+   
 
     return (
         <div className=" g-5 col-sm-12 col-md-6 col-lg-4">
@@ -24,8 +18,10 @@ const Item = ({item}) => {
                     <h6 className="card-title">Supplier name: {supplier}</h6>
                     <p className="card-text">{description}</p>
 
-                    <button onClick={() => navigateToItemDetail(id)} className="btn btn-warning">Stock Update</button>
+                    <Link to='/checkout'>
+                    <button className="btn btn-warning">Stock Update</button>
 
+                    </Link>
                    
                 </div>
             </div>
