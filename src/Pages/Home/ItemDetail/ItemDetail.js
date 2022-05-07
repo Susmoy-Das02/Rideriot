@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import {useParams } from 'react-router-dom';
+import {Link, useParams } from 'react-router-dom';
 
 const ItemDetail = () => {
     const {itemId} = useParams();
     const [item, setItem] = useState({});
+    
     useEffect( () =>{
         const url = `http://localhost:5000/item/${itemId}`;
 
@@ -17,9 +18,9 @@ const ItemDetail = () => {
         <div>
             <h2>{item.name}</h2>
             <div className='text-center' >
-            {/* <Link>
-                <button className='btn btn-primary'>Proceed Checkout</button>
-            </Link> */}
+            <Link to='/manageitem'>
+                <button className='btn btn-primary'>Manage Items</button>
+            </Link>
             </div>
         </div>
     );

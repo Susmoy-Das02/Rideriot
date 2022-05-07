@@ -6,6 +6,7 @@ import ItemDetail from './Pages/Home/ItemDetail/ItemDetail';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ManageItems from './Pages/ManageItems/ManageItems';
 import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
 import NotFound from './Shared/NotFound/NotFound';
@@ -24,6 +25,13 @@ function App() {
 
           <RequireAuth>
             <ItemDetail></ItemDetail>
+          </RequireAuth>
+
+        }></Route>
+        <Route path='/manage' element={
+
+          <RequireAuth>
+            <ManageItems></ManageItems>
           </RequireAuth>
 
         }></Route>
