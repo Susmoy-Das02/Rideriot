@@ -34,7 +34,7 @@ const ItemDetail = () => {
 
             <div className='text-center' >
 
-                <button className='btn btn-primary'>elivered</button>
+                <button className='btn btn-primary'>Delivered</button>
             </div>
         </div>
     );

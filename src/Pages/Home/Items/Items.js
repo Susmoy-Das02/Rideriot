@@ -22,8 +22,8 @@ const Items = () => {
                     ></Item>)
                 }
             </div>
-            <Link to='/manage'>
-                <button className="btn btn-info mt-3 mb-3    ">Manage inventory</button>
+            <Link className='d-flex justify-content-center text-decoration-none' to='/manage'>
+                <button className="btn btn-info mt-3 mb-3">Manage inventory</button>
 
             </Link>
 
