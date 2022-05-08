@@ -22,30 +22,45 @@ const ManageItems = () => {
     }
 
     return (
-        <div className='w-50 mx-auto card' style={{ width: "18rem" }} >
-            <h2>Manage your item</h2>
-            {
-                items.map(item => <div key={item._id} >
 
-                        <img src={item.img} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
-                            <h6 className="card-title">Price: {item.price}</h6>
-                            <h6 className="card-title">Quantity: {item.quantity}</h6>
-                            <h6 className="card-title">Supplier name: {item.supplier}</h6>
-                            <p className="card-text">{item.description}</p>
+        <div className='table-responsive px-5 py-5'>
+            <table className="table table-sm table-light table-striped table-hover">
+                <thead>
+                    <tr className='text-center'>
+                        <th>#</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        items.map((item, i) => (
+                            <tr key={item._id}>
+                                <td className='text-center'>{i+1}</td>
 
-                            <button onClick={() => handleDelete(item._id)}>Delate item</button>
+                                <td className='text-center'><img  src={item.img} style={{width:"20%", height:"20%", borderRadius:"50%"}}  alt="" /></td>
+                                <td className='text-center'>{item.name}</td>
+                                <td className='text-center'>{item.price}</td>
+                                <td className='text-center'>{item.quantity}</td>
+                                <td className='text-center'>{item.description}</td>
+                                <td><button className='btn btn-danger' onClick={() => handleDelete(item._id)}>Delate item</button></td>
+                            </tr>
+
+                        ))
 
 
+                    }
+                </tbody>
+            </table>
+
+        </div>
 
 
-                        </div>
-
-                    </div>)
-            }
-                </div>
-                );
+    );
 };
 
-            export default ManageItems;
+export default ManageItems;
