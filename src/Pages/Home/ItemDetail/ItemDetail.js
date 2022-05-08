@@ -55,7 +55,7 @@ const ItemDetail = () => {
 
 
             try {
-                const { data } = await axios.patch(`http://localhost:5000/update/${id}`, JSON.stringify(updateQuantity), { headers: { 'Content-Type': 'application/json' } });
+                const { data } = await axios.patch(`https://hidden-tor-69572.herokuapp.com/update/${id}`, JSON.stringify(updateQuantity), { headers: { 'Content-Type': 'application/json' } });
 
                 if (data) {
                     alert("delivered successfully")
