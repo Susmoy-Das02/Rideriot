@@ -5,7 +5,7 @@ import Item from '../Item/Item';
 const Items = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('https://hidden-tor-69572.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
@@ -13,7 +13,7 @@ const Items = () => {
 
     return (
         <div id='items' className='container'>
-            <h1 className='text-dark text-center mt-5'>Our Items</h1>
+            <h1 className='text-dark text-center mt-5'> Items</h1>
             <div className='row'>
                 {
                     items.map(item => <Item

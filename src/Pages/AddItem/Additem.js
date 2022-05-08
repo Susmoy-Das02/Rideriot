@@ -5,7 +5,7 @@ const Additem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data =>{
          console.log(data);
-         const url = `http://localhost:5000/item`;
+         const url = `https://hidden-tor-69572.herokuapp.com/item`;
          fetch(url, {
              method:'POST',
              headers: {

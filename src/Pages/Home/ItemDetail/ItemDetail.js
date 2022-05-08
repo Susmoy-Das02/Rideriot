@@ -6,7 +6,7 @@ const ItemDetail = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://hidden-tor-69572.herokuapp.com/item/${itemId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -36,6 +36,13 @@ const ItemDetail = () => {
 
                 <button className='btn btn-primary'>Delivered</button>
             </div>
+
+            <div class="input-group mb-3 mt-3">
+                <input type="number" class="form-control" placeholder="Enter number"/>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Restock</button>
+            </div>
+
+
         </div>
     );
 };
