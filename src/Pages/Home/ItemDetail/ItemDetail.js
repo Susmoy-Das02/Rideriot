@@ -1,26 +1,40 @@
 import React, { useEffect, useState } from 'react';
-import {Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ItemDetail = () => {
-    const {itemId} = useParams();
+    const { itemId } = useParams();
     const [item, setItem] = useState({});
-    
-    useEffect( () =>{
+
+    useEffect(() => {
         const url = `http://localhost:5000/item/${itemId}`;
 
         fetch(url)
-        .then(res => res.json())
-        .then(data => setItem(data))
+            .then(res => res.json())
+            .then(data => setItem(data))
     })
 
 
     return (
         <div>
-            <h2>{item.name}</h2>
+
+            <div className="card" style={{ width: "38rem" }}>
+                <img src={item.img} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{item.name}</h5>
+                    <h6 className="card-title">Price: {item.price}</h6>
+                    <h6 className="card-title">Quantity: {item.quantity}</h6>
+                    <h6 className="card-title">Supplier name: {item.supplier}</h6>
+                    <p className="card-text">{item.description}</p>
+
+
+                </div>
+            </div>
+
+
+
             <div className='text-center' >
-            <Link to='/manageitem'>
-                <button className='btn btn-primary'>Manage Items</button>
-            </Link>
+
+                <button className='btn btn-primary'>elivered</button>
             </div>
         </div>
     );
